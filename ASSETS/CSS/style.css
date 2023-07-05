@@ -18,8 +18,6 @@ body{
 .fade{
     display: flex;
     background-color: rgba(0,0,0,0.5);
-    z-index: 1 ;
-    position: relative;
     height: 100%;
     width: 100%;
 }
@@ -38,6 +36,15 @@ body{
     height: 40%;
     width: 100%;
 }
+.perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    font-weight: bolder;
+    color: #ffff;
+    font-size: 20px;
+}
 .face{
     height: 200px;
     width: 200px;
@@ -48,6 +55,8 @@ body{
     background-size: cover;
     animation-duration: 0.4s;
     animation-iteration-count: infinite;
+    cursor: pointer;
+    /*aplicar a animação em cada face dos personagens*/
 }
 @keyframes light { /*implementar utilizando o javascript*/
     0%{box-shadow: 10px 10px 20px 40px rgb(22, 247, 228)};
@@ -61,6 +70,7 @@ body{
 }
 .faceJean{
     background-image: url('../IMG/JeanFace.jpg');
+    /* Aplicar a animação aqui*/
 }
 .faceVamp {
     background-image: url('../IMG/VampiraFace.jpg');
