@@ -8,14 +8,68 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0000;
     height: 100vh;
     width: 100%;
+    background-color: black;
 }
 .left{
-    flex: 1;
+    flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    height: 100%;
+}
+.rowOne, .rowTwo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+}
+.face{
+    height: 200px;
+    width: 200px;
+    background-color: beige;
+    border-radius: 100px;
+    background-position: center;
+    background-size: cover;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+}
+@keyframes light { /*implementar utilizando o javascript*/
+    0%{box-shadow: 10px 10px 20px 40px rgb(22, 247, 228)};
+    10%{box-shadow: 10px 10px 20px 40px rgb(82, 240, 227)};
+    25%{box-shadow: 10px 10px 20px 40px rgb(56, 230, 215)};
+    45%{box-shadow: 10px 10px 20px 40px rgb(69, 238, 224)};
+    65%{box-shadow: 10px 10px 20px 40px rgb(69, 238, 224)};
+    85%{box-shadow: 10px 10px 20px 40px rgb(69, 238, 224)};
+    100%{box-shadow: 10px 10px 20px 40px rgb(69, 238, 224)};
+    
+}
+.faceJean{
+    background-image: url('../IMG/JeanFace.jpg');
+}
+.faceVamp {
+    background-image: url('../IMG/VampiraFace.jpg');
+}
+.faceTemp{
+    background-image: url('../IMG/TempestadeFace.jpg');
+}
+.faceMagne{
+    background-image: url('../IMG/MagnetoFace.jpg');
+}
+.faceWolve{
+    background-image: url('../IMG/WolverineFace.jpg');
+}
+.faceNoturn{
+    background-image: url('../IMG/NoturnoFace.jpg');
+}
+.right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    height: 100%;
+
 }
