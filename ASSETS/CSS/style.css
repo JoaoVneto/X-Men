@@ -10,7 +10,18 @@ body{
     align-items: center;
     height: 100vh;
     width: 100%;
-    background-color: black;
+    background-image: url('../IMG/background.jpg');
+    background-size: cover;
+    background-position: center;
+   
+}
+.fade{
+    display: flex;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1 ;
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 .left{
     flex: 2;
@@ -32,6 +43,7 @@ body{
     width: 200px;
     background-color: beige;
     border-radius: 100px;
+    border: 1px solid #000;
     background-position: center;
     background-size: cover;
     animation-duration: 0.4s;
@@ -69,7 +81,53 @@ body{
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    justify-content:space-around;
+    align-items: center;
     height: 100%;
-
+}
+.body{
+    height: 70%;
+    width: 60%;
+    border-radius: 20px;
+    background-color: bisque;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 20px 20px rgb(22, 247, 228);
+}
+.bodyJean{
+    background-image: url('../IMG/jeanBody.jpg');
+}
+.bodyVamp{
+    background-image: url('../IMG/VampiraBody.jpg');
+}
+.bodyTemp{
+    background: url('../IMG/TempestadeBody.jpg');
+    background-size: cover;
+}
+.bodyMagne{
+    background-image: url('../IMG/MagnetoBody.jpg');
+}
+.bodyWolve{
+    background-image: url('../IMG/WolverineBody.jpg');
+}
+.bodyNoturn{
+    background-image: url('../IMG/NoturnoBody.jpg');
+}
+.displayNone{
+    display: none;
+}
+button{
+    padding: 20px;
+    background-color: aqua;
+    font-weight: bolder;
+    font: 30px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: aquamarine;
+}
+button:focus{
+    background-color: darkred;
 }
