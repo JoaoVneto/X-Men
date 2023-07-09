@@ -12,10 +12,16 @@
     let bodyMagne = document.querySelector(".bodyMagne");
     let bodyWolve = document.querySelector(".bodyWolve");
     let bodyNoturn = document.querySelector(".bodyNoturn");
+    let faceJean = document.querySelector(".faceJean");
+    let faceVamp = document.querySelector(".faceVamp");
+    let faceTemp = document.querySelector(".faceTemp");
+    let faceMagne = document.querySelector(".faceMagne");
+    let faceWolve = document.querySelector(".faceWolve");
+    let faceNoturn = document.querySelector(".faceNoturn");
 
      //função que vai mostrar o corpo do avatar JeanGrey
 
-    document.querySelector(".faceJean").addEventListener("click", showJean);
+    faceJean.addEventListener("click", showJean);
 
     function showJean(){
         
@@ -27,12 +33,12 @@
             bodyWolve.classList.add("displayNone");
             bodyNoturn.classList.add("displayNone");
 
-            Focar(bodyJean);
+            Focar(faceJean);
 
     }
 
     //função para mostrar o corpo da vampira
-    document.querySelector(".faceVamp").addEventListener("click", showVamp);
+    faceVamp.addEventListener("click", showVamp);
 
     function showVamp(){
 
@@ -43,14 +49,14 @@
         bodyWolve.classList.add("displayNone");
         bodyNoturn.classList.add("displayNone");
 
-        Focar(bodyVamp);
+        Focar(faceVamp);
 
 
     }
 
     //função para mostrar o corpo da tempestade 
 
-    document.querySelector(".faceTemp").addEventListener("click", showTemp);
+    faceTemp.addEventListener("click", showTemp);
 
     function showTemp(){
         
@@ -61,13 +67,13 @@
             bodyWolve.classList.add("displayNone");
             bodyNoturn.classList.add("displayNone");
 
-            Focar(bodyTemp);
+            Focar(faceTemp);
 
     }
  
     //função para mostrar o corpo do Magneto 
 
-    document.querySelector(".faceMagne").addEventListener("click", showMagne);
+    faceMagne.addEventListener("click", showMagne);
 
     function showMagne(){
         
@@ -78,13 +84,13 @@
             bodyWolve.classList.add("displayNone");
             bodyNoturn.classList.add("displayNone");
 
-            Focar(bodyMagne);
+            Focar(faceMagne);
 
     }
 
     //função para mostrar o corpo da Wolve
 
-    document.querySelector(".faceWolve").addEventListener("click", showWolve);
+    faceWolve.addEventListener("click", showWolve);
 
     function showWolve(){
         
@@ -95,13 +101,13 @@
             bodyTemp.classList.add("displayNone");
             bodyNoturn.classList.add("displayNone");
 
-            Focar(bodyWolve);
+            Focar(faceWolve);
 
     }
 
     //função para mostrar o corpo do Noturno
 
-    document.querySelector(".faceNoturn").addEventListener("click", showNoturno);
+    faceNoturn.addEventListener("click", showNoturno);
 
     function showNoturno(){
         
@@ -112,7 +118,22 @@
             bodyWolve.classList.add("displayNone");
             bodyTemp.classList.add("displayNone");
 
-            Focar(bodyNoturn);
+            Focar(faceNoturn);
+
+    }
+
+    //função para adicionar animação aos perfis.
+
+    function Focar(A){
+
+        if(A.style.animationName = "light" ===false){
+            A.style.animationName ="light"
+        } else {
+            A.style.transition = "none"
+            //corrigir está logica 
+        }
+
+
 
     }
 
