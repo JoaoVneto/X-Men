@@ -124,17 +124,17 @@
 
     function Focar(A){
 
-        if(A.style.animationName = "light" ===false){
-            A.style.animationName ="light"
-        } else {
-            A.style.transition = "none"
-            //corrigir está logica 
-        }
-
-
+        Clear();
+        
+        A.style.animationName="light";
 
     }
 
+    function Clear(){
 
+        face.forEach((E)=>{
+                E.style.removeProperty("animation-name");
+        })
 
+    }
 
