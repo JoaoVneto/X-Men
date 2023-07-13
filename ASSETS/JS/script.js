@@ -6,119 +6,117 @@
     saida: luzes indicando o foco do personagem selecionado, e troca do corpo do personagem. */
 
     //variáveis de escopo global serão utilizadas durante todo projeto.
-    let bodyJean = document.querySelector(".bodyJean");
-    let bodyVamp = document.querySelector(".bodyVamp");
-    let bodyTemp = document.querySelector(".bodyTemp");
-    let bodyMagne = document.querySelector(".bodyMagne");
-    let bodyWolve = document.querySelector(".bodyWolve");
-    let bodyNoturn = document.querySelector(".bodyNoturn");
-    let faceJean = document.querySelector(".faceJean");
+
+    let body = document.querySelectorAll(".body");
+    let face = document.querySelectorAll(".face");
+
+    /*let faceJean = document.querySelector(".faceJean");
     let faceVamp = document.querySelector(".faceVamp");
     let faceTemp = document.querySelector(".faceTemp");
     let faceMagne = document.querySelector(".faceMagne");
     let faceWolve = document.querySelector(".faceWolve");
-    let faceNoturn = document.querySelector(".faceNoturn");
+    let faceNoturn = document.querySelector(".faceNoturn");*/
 
      //função que vai mostrar o corpo do avatar JeanGrey
 
-    faceJean.addEventListener("click", showJean);
+    face[0].addEventListener("click", showJean);
 
     function showJean(){
         
         
-            bodyJean.classList.remove("displayNone");
-            bodyVamp.classList.add("displayNone");
-            bodyTemp.classList.add("displayNone");
-            bodyMagne.classList.add("displayNone");
-            bodyWolve.classList.add("displayNone");
-            bodyNoturn.classList.add("displayNone");
+            body[0].classList.remove("displayNone");
+            body[1].classList.add("displayNone");
+            body[2].classList.add("displayNone");
+            body[3].classList.add("displayNone");
+            body[4].classList.add("displayNone");
+            body[5].classList.add("displayNone");
 
-            Focar(faceJean);
+            Focar(face[0]);
 
     }
 
     //função para mostrar o corpo da vampira
-    faceVamp.addEventListener("click", showVamp);
+    face[1].addEventListener("click", showVamp);
 
     function showVamp(){
 
-        bodyVamp.classList.remove("displayNone");
-        bodyJean.classList.add("displayNone");
-        bodyTemp.classList.add("displayNone");
-        bodyMagne.classList.add("displayNone");
-        bodyWolve.classList.add("displayNone");
-        bodyNoturn.classList.add("displayNone");
+        body[1].classList.remove("displayNone");
+        body[0].classList.add("displayNone");
+        body[2].classList.add("displayNone");
+        body[3].classList.add("displayNone");
+        body[4].classList.add("displayNone");
+        body[5].classList.add("displayNone");
 
-        Focar(faceVamp);
+        Focar(face[1]);
 
 
     }
 
     //função para mostrar o corpo da tempestade 
 
-    faceTemp.addEventListener("click", showTemp);
+    face[2].addEventListener("click", showTemp);
 
     function showTemp(){
         
-            bodyTemp.classList.remove("displayNone");
-            bodyVamp.classList.add("displayNone");
-            bodyJean.classList.add("displayNone");
-            bodyMagne.classList.add("displayNone");
-            bodyWolve.classList.add("displayNone");
-            bodyNoturn.classList.add("displayNone");
+            body[2].classList.remove("displayNone");
+            body[0].classList.add("displayNone");
+            body[1].classList.add("displayNone");
+            body[5].classList.add("displayNone");
+            body[3].classList.add("displayNone");
+            body[4].classList.add("displayNone");
 
-            Focar(faceTemp);
+            Focar(face[2]);
 
     }
  
     //função para mostrar o corpo do Magneto 
 
-    faceMagne.addEventListener("click", showMagne);
+    face[3].addEventListener("click", showMagne);
 
     function showMagne(){
         
-            bodyMagne.classList.remove("displayNone");
-            bodyVamp.classList.add("displayNone");
-            bodyJean.classList.add("displayNone");
-            bodyTemp.classList.add("displayNone");
-            bodyWolve.classList.add("displayNone");
-            bodyNoturn.classList.add("displayNone");
+            body[3].classList.remove("displayNone");
+            body[0].classList.add("displayNone");
+            body[1].classList.add("displayNone");
+            body[2].classList.add("displayNone");
+            body[4].classList.add("displayNone");
+            body[5].classList.add("displayNone");
 
-            Focar(faceMagne);
+            Focar(face[3]);
 
     }
 
     //função para mostrar o corpo da Wolve
 
-    faceWolve.addEventListener("click", showWolve);
+    face[4].addEventListener("click", showWolve);
 
     function showWolve(){
         
-            bodyWolve.classList.remove("displayNone");
-            bodyVamp.classList.add("displayNone");
-            bodyJean.classList.add("displayNone");
-            bodyMagne.classList.add("displayNone");
-            bodyTemp.classList.add("displayNone");
-            bodyNoturn.classList.add("displayNone");
+            body[4].classList.remove("displayNone");
+            body[0].classList.add("displayNone");
+            body[1].classList.add("displayNone");
+            body[2].classList.add("displayNone");
+            body[3].classList.add("displayNone");
+            body[5].classList.add("displayNone");
 
-            Focar(faceWolve);
+            Focar(face[4]);
 
     }
 
     //função para mostrar o corpo do Noturno
 
-    faceNoturn.addEventListener("click", showNoturno);
+    face[5].addEventListener("click", showNoturno);
 
     function showNoturno(){
         
-            bodyNoturn.classList.remove("displayNone");
-            bodyVamp.classList.add("displayNone");
-            bodyJean.classList.add("displayNone");
-            bodyMagne.classList.add("displayNone");
-            bodyWolve.classList.add("displayNone");
-            bodyTemp.classList.add("displayNone");
+            body[5].classList.remove("displayNone");
+            body[0].classList.add("displayNone");
+            body[1].classList.add("displayNone");
+            body[2].classList.add("displayNone");
+            body[3].classList.add("displayNone");
+            body[4].classList.add("displayNone");
 
-            Focar(faceNoturn);
+            Focar(face[5]);
 
     }
 
